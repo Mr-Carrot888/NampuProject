@@ -1,15 +1,29 @@
-#include <stdio.h> //อันนี้คิดนานมาก
-int main (){
-int i,p,count;
-  scanf("%d",&i);
+#include <stdio.h>  //พีระมิด 2 โปรแกรมนี้ยังไม่ผ่าน
 
- for (p = 1; p <= i; p++) {
- for (count = 0;count < p;count++){
- printf("*");
- }
+int main()
+{
+int i,o;
+scanf("%d",&i);
+o=i;
+for (int p = 1; p <= i; p++) {
+
+
+for (int c = o; c > 0; c--) {  //เว้นวรรค
+  printf(" ");
+}
+o-=1;
+
+
+for (int c = 1; c <= p; c++){  //ปริ้น "*"
+     printf("*");
+  }
+p++;
+i++;
+
+
  printf("\n");
 }
 
 
-return 0;
+      return 0;
 }
